@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1> 
+    <p>Tente abrir em diferentes dispositivos ou diminua ou aumente o tamano do seu navegador.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/imagem-p.png">
+        <source media="(max-width: 1050px)" srcset="imagens/imagem-m.png">
+        <img src="imagens/imagem-g.png" alt="Imagem">
+    </picture>
+
+    <h1>Aprendendo a Reproduzir Áudios</h1>
+    <p>Abaixo terá um áudio para reprodução</p>
+    <!--Tipos de Áudio: MP3, OGG e WAV-->
+    <audio src="mídia/Shadowstep - The Mini Vandals.mp3" controls autoplay></audio>
+
+    <!--Não funcionou dessa forma-->
+    <audio>
+        <source src="mídia/Rain Over Kyoto Station - The Mini Vandals.mp3" type="audio/mpeg">
+        <source src="mídia/guanacast-33.mp3" type="audio/ogg">
+        <source src="mídia/guanacast-33.mp3" type="audio/wav">
+    </audio>
+
+    <audio preload="metadata" autoplay controls>
+        <source src="mídia/Shadowstep - The Mini Vandals.mp3" type="audio/mpeg">
+        <source src="mídia/Shadowstep - The Mini Vandals.mp3" type="audio/ogg">
+        <source src="mídia/Shadowstep - The Mini Vandals.mp3" type="audio/wav">
+    </audio>
+    <audio src=""></audio>
+    sour
+</body>
+</html>

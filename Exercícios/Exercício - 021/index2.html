@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Grouping Tags</title>
+    <style>
+
+        body{
+            background-color: #484848;
+        }
+        /* Seletor por TAG */
+        header {
+            background-color: #ffffff;
+            padding: 15px;
+            background-color: #ffffff;
+        }
+
+        /* Seletor por ID */
+        #conteudo-principal {
+            background-color: #ffffff;
+            padding: 20px;
+            margin: 10px 0;
+            
+        }
+
+        /* Seletor por CLASSE */
+        .caixa {
+            border: 1px solid #333;
+            padding: 10px;
+            margin: 10px 0;
+            background-color: #dbdbdb;
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.418);
+            border-radius: 10px;
+        }
+
+        /* Seletor de DESCENDÊNCIA */
+        section article {
+            border: 1px solid #333;
+            padding: 10px;
+            margin: 10px 0;
+            background-color: #dbdbdb;
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.418);
+            border-radius: 10px;
+        }
+
+        /* Seletor por múltiplos elementos */
+        footer {
+            background-color: #000000;
+            color: white;
+            padding: 10px;
+        }
+
+        nav {
+            background-color: #6a6a6a;
+            color: white;
+            padding: 10px;
+        }
+
+        nav > a{
+            margin-right: 30px;
+            margin-left: 10px;
+        }
+
+        footer > p{
+            margin: 0px;
+        }
+        /* Seletor de classe combinada */
+        .destaque {
+            font-weight: bold;
+            color: darkred;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site de Estudos</h1>
+        <p>Exemplo de tags de agrupamento em HTML</p>
+    </header>
+
+    <nav>
+        <a href="#">Início</a> 
+        <a href="#">Sobre</a> 
+        <a href="#">Contato</a>
+    </nav>
+
+    <div id="conteudo-principal">
+        <section>
+            <h2>Seção de Notícias</h2>
+            <article>
+                <h3>Notícia 1</h3>
+                <p>Este é um artigo dentro da seção de notícias.</p>
+            </article>
+            <article>
+                <h3>Notícia 2</h3>
+                <p>Mais um exemplo de artigo. <span class="destaque">Texto em destaque</span>.</p>
+            </article>
+        </section>
+
+        <aside class="caixa">
+            <h3>Conteúdo Lateral</h3>
+            <p>Aqui ficam informações adicionais, como propagandas ou links extras.</p>
+        </aside>
+    </div>
+
+    <footer>
+        <p>Desenvolvido para estudo de HTML & CSS</p>
+    </footer>
+</body>
+</html>

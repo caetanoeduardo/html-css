@@ -1,0 +1,136 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Bungee&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+body{
+    background-color: #e9f0fc;
+    border-radius: 1em;
+}
+
+header{
+    color: #ffffff;
+    text-align: center;
+    background-image: linear-gradient(90deg, #0a1a3e 0%, #0ea5e9 100%);
+    background-attachment: fixed;
+    margin: -1.5em;
+    padding: 0.05em;
+    box-sizing: border-box;
+    
+    
+}
+nav{
+    text-align: left;
+    word-spacing: 2em;
+    text-indent: 1.5em;
+}
+
+
+footer{
+    background-color: #0a1a3e;
+    border-radius: 1em;
+    margin: 0em 0em 0em 0em;
+    font-size: 1.4em;
+}
+
+#rodape{
+    text-align: center;
+    color: white;
+}
+
+article{
+    background-color: white;
+    border-radius: 0.5em;
+    margin-left: 8em;
+    margin-top: 0.2em;
+    margin-right: 8em;
+    padding-bottom: 0.1em;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.303);
+}
+
+h2{
+     font-family: "Rajdhani", 'Times New Roman', Times, serif;
+     color: #09318f;
+     text-align: center;
+     font-size: 2em;  
+     text-decoration: underline;  
+    }
+
+h3{
+    font-family: "Rajdhani", 'Times New Roman', Times, serif;
+     color: #09318f;
+     text-align: center;
+     font-size: 1.5em;
+     margin: 1em;
+     border-radius: 1em;
+     background-image: linear-gradient(90deg,#a5c0ffb0, #ffffff)
+
+}
+
+p{
+    text-indent: 2em;
+    margin: 1.5em;
+    text-align: justify;
+}
+
+ul {
+    list-style-type: none;       /* Remove marcadores padrão */
+  padding-left: 0;             /* Remove recuo */
+  margin: 20px 0;
+}
+
+li {
+    padding: 8px 0;
+  border-bottom: 1px solid #eee;  /* Linha divisória */
+  position: relative;
+  padding-left: 25px;    
+}
+
+#robos{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    width: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#irina{
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    display: block;
+    width: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#video{
+    background-color: rgba(8, 8, 121, 0.86);
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    display: block;
+    width: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#box{
+    background-color: #81a6fc;
+    margin: 2em 2em;
+    border-radius: 1em 1em;
+;
+}
+
+#titulo-box{
+    color: white;
+    
+    background-color: #0a1a3e;
+    border-radius: 0.5em 0.5em 0em 0em;
+    font-size: 2em;
+    text-align: center;
+    margin: auto;
+}
+
