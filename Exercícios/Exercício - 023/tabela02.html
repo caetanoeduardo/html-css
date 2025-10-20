@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela 2</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            width: 400px;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #000;
+            padding: 8px;
+            text-align: center;
+        }
+        thead, tfoot {
+            background-color: #686868;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Estado</th>
+                <th>População</th>
+                <th>Área (km²)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td>12.252.023</td>
+                <td>248.222</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>17.366.189</td>
+                <td>43.696</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td>21.292.666</td>
+                <td>586.522</td>
+            </tr>
+            <tfoot>
+            <tr>
+                <td colspan="3">Fonte: IBGE 2020</td>
+            </tfoot>
+    </table>
+</body>
+</html>
