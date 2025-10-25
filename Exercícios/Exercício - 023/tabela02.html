@@ -12,24 +12,52 @@
         table {
             width: 400px;
             border-collapse: collapse;
+            position: relative;
         }
+
+        caption, #fonte {
+            font-size: 0.8em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: rgb(202, 202, 202);
+            color: white;
+            border: 1px solid #000;
+        }
+
         th, td {
             border: 1px solid #000;
             padding: 8px;
             text-align: center;
         }
+
+        tbody > tr:nth-child(odd) {
+            background-color: #f2f2f2;
+        }
+
+        tbody > tr:nth-child(even) {
+            background-color: #9d9d9d;
+        }
+
         thead, tfoot {
-            background-color: #686868;
+            background-color: #323131;
+            color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;  
+            top: 0;
+            background-color: #323131;
         }
     </style>
 </head>
 <body>
     <table>
+        <caption>Tabela de População e Área dos Estados Brasileiros</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
-                <th>Área (km²)</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
+                <th scope="col">Área (km²)</th>
             </tr>
         </thead>
         <tbody>
@@ -48,9 +76,130 @@
                 <td>21.292.666</td>
                 <td>586.522</td>
             </tr>
+            <tr>
+                <td>Bahia</td>
+                <td>14.930.634</td>
+                <td>564.733</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td>11.516.840</td>
+                <td>199.307</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td>11.422.973</td>
+                <td>281.748</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td>9.616.621</td>
+                <td>98.311</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td>9.132.078</td>
+                <td>148.920</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td>7.338.473</td>
+                <td>95.346</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td>7.113.540</td>
+                <td>340.086</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td>4.207.714</td>
+                <td>1.559.161</td>
+            </tr>
+            <tr>
+                <td>Espírito Santo</td>
+                <td>4.018.650</td>
+                <td>46.095</td>
+            </tr>
+            <tr>
+                <td>Rondônia</td>
+                <td>1.815.278</td>
+                <td>237.576</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td>631.181</td>
+                <td>224.301</td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td>881.935</td>
+                <td>164.123</td>
+            </tr>
+            <tr></tr>
+                <td>Rondônia</td>
+                <td>1.815.278</td>
+                <td>237.576</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td>631.181</td>
+                <td>224.301</td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td>881.935</td>
+                <td>164.123</td>
+            </tr>
+            <tr>
+                <td>Amapá</td>
+                <td>845.731</td>
+                <td>142.828</td>
+            </tr>
+            <tr>
+                <td>Distrito Federal</td>
+                <td>3.094.325</td>
+                <td>5.802</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td>3.351.543</td>
+                <td>27.767</td>
+            </tr>
+            <tr>
+                <td>Sergipe</td>
+                <td>2.298.696</td>
+                <td>21.910</td>
+            </tr>
+            <tr>
+                <td>Paraíba</td>
+                <td>4.059.905</td>
+                <td>56.584</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td>7.075.181</td>
+                <td>331.983</td>
+            </tr>
+            <tr>
+                <td>Piauí</td>
+                <td>3.281.480</td>
+                <td>251.577</td>
+            </tr>
+            <tr>
+                <td>Tocantins</td>
+                <td>1.590.248</td>
+                <td>277.620</td>
+            </tr>
             <tfoot>
             <tr>
-                <td colspan="3">Fonte: IBGE 2020</td>
+                <th scope="row">População Total</th>
+                <td>211.755.692</td>
+                <td>8.515.767</td>
+            </tr>
+            <tr>
+                <td id="fonte" colspan="3">Fonte: IBGE 2020</td>
+            </tr>
             </tfoot>
     </table>
 </body>
