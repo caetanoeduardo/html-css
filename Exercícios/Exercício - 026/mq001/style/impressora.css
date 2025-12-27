@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+* {
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+menu{
+    display: none;
+}
+
+article{
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
+article::after{
+    content: "Website criado por Eduardo Caetano";
+    display: block;
+    clear: both;
+}
