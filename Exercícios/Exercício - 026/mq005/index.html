@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Media Queries</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="style/estilo.css">
+    <link rel="stylesheet" href="style/Mediaquery.css">
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <h1>Design Responsivo em Ação</h1>
+        <h2>Dominando Media Queries para Layouts Perfeitos</h2>
+        <span id="menu-icon" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <menu id="options">
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Projetos</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#">Grupo</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>O que são Media Queries?</h2>
+            <p>Media Queries são uma técnica poderosa do CSS3 que permite aplicar estilos específicos dependendo das características do dispositivo, como largura da tela, altura, orientação e resolução. Elas são fundamentais para criar sites responsivos que se adaptam perfeitamente desde smartphones até desktops de alta resolução.        
+            </p>
+        </article>
+
+        <article>
+            <h2>Por que o Design Responsivo Importa?</h2>
+            <p>Com a diversidade de dispositivos atuais, um site deve oferecer uma experiência otimizada independentemente de como é acessado. Media Queries permitem ajustar layouts, tipografia, imagens e elementos de navegação para garantir usabilidade e estética em qualquer contexto. É a chave para reduzir taxas de rejeição e melhorar o engajamento</p>
+        </article>
+
+        <article>
+            <h2>Práticas Recomendadas</h2>
+            <p>Comece com uma abordagem "mobile-first", desenvolvendo primeiro para telas pequenas e depois expandindo para maiores. Defina breakpoints estratégicos baseados no conteúdo, não em dispositivos específicos. Teste sempre em dispositivos reais e use ferramentas de desenvolvimento do navegador para simular diferentes tamanhos de tela</p>
+        </article>
+
+    </main>
+    <footer>
+        <p>Prática em Ação - Experimente redimensionar esta janela para ver as Media Queries em ação! Observe como o layout, as cores e a tipografia se adaptam suavemente</p>
+    </footer>
+    <script>
+        function mudouTamanho() {
+            var menu = document.getElementById('options');
+            if (window.innerWidth >= 768) {
+                menu.style.display = 'block';
+            } else {
+                menu.style.display = 'none';
+            }
+        }
+         
+        function clickMenu() {
+            var menu = document.getElementById('options');
+            if (menu.style.display === 'block') {
+                menu.style.display = 'none';
+            } else {
+                menu.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
